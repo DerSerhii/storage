@@ -1,9 +1,11 @@
-
 a = 188
+
 
 # ******* OPTION #1 *******
 def is_prime(num):
     return True if (all(num % i for i in range(2, num)) and num > 1) else False
+
+
 print(f"Option #1: {a} -> {is_prime(a)}")
 
 
@@ -17,6 +19,8 @@ def is_prime(num):
             break
         d += 1
     return res
+
+
 print(f"Option #2: {a} -> {is_prime(a)}")
 
 
@@ -42,10 +46,13 @@ def is_prime(num):
     for i in range(3, root + 1, 2):
         if num % i == 0: return False
     return True
+
+
 print(f"Option #3: {a} -> {is_prime(a)}")
 
-
 """ ******* FIND OPTION #1 ******* """
+
+
 def find_prime_factors(number):
     from math import sqrt
     factors, divider = [], 2
@@ -59,19 +66,22 @@ def find_prime_factors(number):
     if number > 1:
         factors.append(int(number))
     return factors
+
+
 print(f"Find option #1: {a} -> {find_prime_factors(a)}")
 
-
 """ ******* FIND OPTION #2 ******* """
+
+
 def find_prime_factors(number):
     factors, divisor = [], 2
-    while (divisor <= number):
+    while divisor <= number:
         if (number % divisor) == 0:
             factors.append(divisor)
             number = number / divisor
         else:
             divisor += 1
     return factors
+
+
 print(f"Find option #2: {a} -> {find_prime_factors(a)}")
-
-
