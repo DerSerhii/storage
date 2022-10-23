@@ -16,3 +16,7 @@ def some_func():
 
 some_func = decorator(some_func)
 some_func()
+
+
+print(dir([some_func]))
+print(vars(some_func))
