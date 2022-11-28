@@ -1,5 +1,7 @@
 """decimal to binary conversion"""
 
+from selenium import webdriver
+
 
 def conversion_decimal_to_binary(number: int) -> int:
     lst_bin_num = []
