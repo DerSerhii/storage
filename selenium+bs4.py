@@ -39,4 +39,4 @@ def get_soup_ukr_word(word: str) -> BeautifulSoup:
 
 
 result = get_soup_ukr_word("спати")
-print(Fore.LIGHTGREEN_EX, result.text)
+print(Fore.LIGHTGREEN_EX + result.text)
