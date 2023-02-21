@@ -56,7 +56,6 @@ variables = [
     ([8, 4, 9, 2, 9, 9, 7, 8, 9, 7, 9, 9, 7, 4, 9, 6, 2, 8, 6, 1, 4,
       4, 0, 2, 1, 3, 9, 3, 2, 4, 9, 2, 2, 5, 3, 3, 1, 6, 4, 2, 5, 1, 2, 3], 2),
 ]
-
 for var in variables:
     assert set_reducer_1(var[0]) == var[1]
     assert set_reducer_2(var[0]) == var[1]
